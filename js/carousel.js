@@ -7,9 +7,9 @@ new Vue({
 		//  swiperOptionTop: {
 		//   setWrapperSize: true
 			// },
-		images: ['../img/elite.jpg', '../img/usda.jpg'],
+		images: ['../img/elite.jpg', '../img/usda.jpg', '../img/winter.jpg', '../img/gift.jpg', '../img/appraisal.jpg'],
 		swiperOptionThumbs: {
-			spaceBetween: 10,
+			spaceBetween: 20,
 			slidesPerView: 4,
 			centeredSlides: true,
 			// touchRatio: 0.2,

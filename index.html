@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>title</title>
+		<!-- Include stylesheet -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet"/>
+	</head>
+	<body>
+
+		<div id="vueapp">
+			<swiper :options="swiperOptionThumbs" ref="swiperThumbs" class="gallery-thumbs">
+				<swiper-slide
+					v-for="image in images"
+					:style="{ backgroundImage: 'url(' + image + ')' }">
+				</swiper-slide>
+				<swiper-slide></swiper-slide>
+				<swiper-slide></swiper-slide>
+				<swiper-slide></swiper-slide>
+				<div class="swiper-button-prev" slot="button-prev">
+					<icon-arrow></icon-arrow>
+				</div>
+				<div class="swiper-button-next" slot="button-next">
+					<icon-arrow></icon-arrow>
+				</div>
+			</swiper>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<!-- Swiper JS Vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper@3.1.2/dist/vue-awesome-swiper.js"></script>
+	<script src="js/carousel.js"></script>
+</html>
